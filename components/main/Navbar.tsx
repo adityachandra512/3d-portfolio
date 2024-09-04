@@ -20,8 +20,8 @@ const Navbar = () => {
         </a>
         <div className='w-[500px] flex flex-row items-center justify-between md:mr-20'>
           <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200'>
-            <a href='#about-me' className='cursor-pointer hover:text-purple-400 text-base hover:text-lg transition-all duration-300'>About Me</a>
-            <a href='#skill' className='cursor-pointer hover:text-purple-400 text-base hover:text-lg transition-all duration-300'>Skills</a>
+            <a href='https://github.com/adityachandra512/resume/blob/main/Jake_s_Resume%20(8).pdf' className='cursor-pointer hover:text-purple-400 text-base hover:text-lg transition-all duration-300'>About Me</a>
+            <a href='#skills' className='cursor-pointer hover:text-purple-400 text-base hover:text-lg transition-all duration-300'>Skills</a>
             <a href='#projects' className='cursor-pointer hover:text-purple-400 text-base hover:text-lg transition-all duration-300'>Projects</a>
           </div>
         </div>
