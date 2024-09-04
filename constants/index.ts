@@ -82,9 +82,9 @@ export const Skill_data = [
   
   export const Socials = [
     {
-      name: "Discord",
-      src: "/discord.svg",
-      href: "https://discord.com/users/your-discord-id",
+      name: "Twitter",
+      src: "/twitter-svgrepo-com.svg",
+      href: "https://x.com/aditya_cha9063",
     },
     {
       name: "Linkedin",
@@ -92,9 +92,9 @@ export const Skill_data = [
       href: "https://www.linkedin.com/in/aditya-ch/",
     },
     {
-      name: "Instagram",
-      src: "/instagram.svg",
-      href: "https://www.instagram.com/your-instagram-profile",
+      name: "Github",
+      src: "/github-svgrepo-com.svg",
+      href: "https://github.com/adityachandra512",
     },  
   ];
   
