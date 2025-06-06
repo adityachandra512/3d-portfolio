@@ -1,10 +1,22 @@
+"use client";
 import { Socials } from '@/constants';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className='w-full h-[75px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001420] backdrop-blur-lg z-50 px-10 transition-all duration-300 hover:h-[85px] hover:bg-[#03001435]'>
+    <div className='w-full h-[75px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001420] backdrop-blur-lg z-50 px-4 md:px-10 transition-all duration-300 hover:h-[85px] hover:bg-[#03001435]'>
       <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
         {/* Enhanced Name Section */}
         <a href="#about-me" className='h-auto w-auto flex flex-row items-center group'>
@@ -14,8 +26,8 @@ const Navbar = () => {
           </span>
         </a>
 
-        {/* Enhanced Navigation Menu */}
-        <div className="w-[650px] h-full flex flex-row items-center justify-between md:mr-20">
+        {/* Desktop Navigation Menu */}
+        <div className="hidden lg:flex w-[650px] h-full flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f880] bg-[#03001460] backdrop-blur-sm mr-[15px] px-[25px] py-[12px] rounded-full text-gray-200 shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:bg-[#03001480]">
             <a href="#hero" className="cursor-pointer hover:text-purple-300 transition-all duration-300 text-sm hover:text-lg hover:font-semibold relative group px-2 py-1 hover:scale-110">
               <span className="relative z-10">Home</span>
@@ -40,8 +52,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Enhanced Socials Section */}
-        <div className="flex flex-row gap-6">
+        {/* Desktop Social Links */}
+        <div className="hidden md:flex flex-row gap-6">
           {Socials.map((social) => (
             <a 
               href={social.href}
@@ -68,6 +80,61 @@ const Navbar = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400/20 to-pink-400/20 scale-100 group-hover:scale-150 transition-all duration-700 -z-20 animate-pulse opacity-0 group-hover:opacity-100"></div>
             </a>
           ))}
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={toggleMenu}
+          className="lg:hidden p-2 text-white hover:text-purple-300 transition-colors duration-300"
+        >
+          {isMenuOpen ? (
+            <XMarkIcon className="h-6 w-6" />
+          ) : (
+            <Bars3Icon className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`lg:hidden absolute top-full left-0 w-full bg-[#03001490] backdrop-blur-lg border-t border-purple-500/30 transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+        <div className="flex flex-col py-4">
+          {/* Mobile Navigation Links */}
+          <a href="#hero" onClick={closeMenu} className="px-6 py-3 text-gray-200 hover:text-purple-300 hover:bg-purple-500/10 transition-all duration-300">
+            Home
+          </a>
+          <a href="#about" onClick={closeMenu} className="px-6 py-3 text-gray-200 hover:text-purple-300 hover:bg-purple-500/10 transition-all duration-300">
+            About
+          </a>
+          <a href="#skills" onClick={closeMenu} className="px-6 py-3 text-gray-200 hover:text-purple-300 hover:bg-purple-500/10 transition-all duration-300">
+            Skills
+          </a>
+          <a href="#experience" onClick={closeMenu} className="px-6 py-3 text-gray-200 hover:text-purple-300 hover:bg-purple-500/10 transition-all duration-300">
+            Experience
+          </a>
+          <a href="#projects" onClick={closeMenu} className="px-6 py-3 text-gray-200 hover:text-purple-300 hover:bg-purple-500/10 transition-all duration-300">
+            Projects
+          </a>
+          
+          {/* Mobile Social Links */}
+          <div className="flex flex-row gap-4 justify-center py-4 border-t border-purple-500/30 mt-2">
+            {Socials.map((social) => (
+              <a 
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={social.name}
+                className="transform hover:scale-110 transition-all duration-300"
+              >
+                <Image
+                  src={social.src}
+                  alt={social.name}
+                  width={24}
+                  height={24}
+                  className="cursor-pointer transition-all duration-300 hover:brightness-150"
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

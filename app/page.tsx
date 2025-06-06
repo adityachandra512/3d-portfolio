@@ -1,14 +1,11 @@
 // @ts-ignore
-import Encryption from "@/components/main/Encryption";
 import Hero from "@/components/main/Hero";
 import About from "@/components/main/About";
 import Skills from "@/components/main/Skills";
 import Experience from "@/components/main/Experience";
 import Projects from "@/components/main/Project";
-import Image from "next/image";
 import Footer from "@/components/main/Footer";
 import Navbar from "@/components/main/Navbar";
-
 export default function Home() {
   return (
     <main className="h-full w-full relative">

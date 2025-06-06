@@ -346,19 +346,6 @@ const Footer = () => {
                   >
                     📧 Email me directly
                   </button>
-                  <span className="text-gray-500 hidden sm:inline">•</span>
-                  <button 
-                    type="button"
-                    onClick={() => {
-                      const text = `Name: ${formData.firstName}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
-                      navigator.clipboard.writeText(text).then(() => {
-                        setStatusMessage('📋 Message copied to clipboard!');
-                      });
-                    }}
-                    className="text-cyan-400 hover:text-cyan-300 underline cursor-pointer bg-transparent border-none outline-none text-sm"
-                  >
-                    📋 Copy message
-                  </button>
                 </div>
               </div>
             </form>
