@@ -49,6 +49,10 @@ const Navbar = () => {
               <span className="relative z-10">Projects</span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
             </a>
+            <a href="#contact" className="cursor-pointer hover:text-purple-300 transition-all duration-300 text-sm hover:text-lg hover:font-semibold relative group px-2 py-1 hover:scale-110">
+              <span className="relative z-10">Contact Me</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+            </a>
           </div>
         </div>
 
