@@ -41,7 +41,7 @@ const Skills = () => {
             <SkillDataProvider src="/js.png" width={60} height={60} index={2} name="JavaScript" />
             <SkillDataProvider src="/ts.png" width={60} height={60} index={3} name="TypeScript" />
             <SkillDataProvider src="/react.png" width={60} height={60} index={4} name="React" />
-            <SkillDataProvider src="/next.js.svg" width={60} height={60} index={5} name="Next.js" />
+            <SkillDataProvider src="/next.png" width={60} height={60} index={5} name="Next.js" />
             <SkillDataProvider src="/tailwind.png" width={60} height={60} index={6} name="Tailwind CSS" />
           </div>
         </motion.div>
@@ -67,9 +67,9 @@ const Skills = () => {
             </h3>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-            <SkillDataProvider src="/node.js.svg" width={60} height={60} index={7} name="Node.js" />
+            <SkillDataProvider src="/Node.js.svg" width={60} height={60} index={7} name="Node.js" />
             <SkillDataProvider src="/express.png" width={60} height={60} index={8} name="Express.js" />
-            <SkillDataProvider src="/python.svg" width={60} height={60} index={9} name="Python" />
+            <SkillDataProvider src="/Python.svg" width={60} height={60} index={9} name="Python" />
             <SkillDataProvider src="/mongodb.png" width={60} height={60} index={10} name="MongoDB" />
             <SkillDataProvider src="/mysql.png" width={60} height={60} index={11} name="MySQL" />
             <SkillDataProvider src="/PostgresSQL.svg" width={60} height={60} index={12} name="PostgreSQL" />
@@ -98,8 +98,8 @@ const Skills = () => {
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
             <SkillDataProvider src="/js.png" width={60} height={60} index={13} name="JavaScript" />
-            <SkillDataProvider src="/python.svg" width={60} height={60} index={15} name="Python" />
-            <SkillDataProvider src="/java.svg" width={60} height={60} index={16} name="Java" />
+            <SkillDataProvider src="/Python.svg" width={60} height={60} index={15} name="Python" />
+            <SkillDataProvider src="/Java.svg" width={60} height={60} index={16} name="Java" />
             <SkillDataProvider src="/C++.svg" width={60} height={60} index={17} name="C++" />
           </div>
         </motion.div>
@@ -126,7 +126,7 @@ const Skills = () => {
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
             <SkillDataProvider src="/Git.svg" width={60} height={60} index={18} name="Git" />
-            <SkillDataProvider src="/Github.svg" width={60} height={60} index={19} name="GitHub" />
+            <SkillDataProvider src="/GitHub.svg" width={60} height={60} index={19} name="GitHub" />
             <SkillDataProvider src="/vscode.svg" width={60} height={60} index={22} name="VS Code" />
             <SkillDataProvider src="/figma.png" width={60} height={60} index={23} name="Figma" />
           </div>
