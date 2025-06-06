@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* Desktop Navigation Menu */}
         <div className="hidden lg:flex w-[650px] h-full flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f880] bg-[#03001460] backdrop-blur-sm mr-[15px] px-[25px] py-[12px] rounded-full text-gray-200 shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:bg-[#03001480]">
-            <a href="#hero" className="cursor-pointer hover:text-purple-300 transition-all duration-300 text-sm hover:text-lg hover:font-semibold relative group px-2 py-1 hover:scale-110">
+            <a href="#" className="cursor-pointer hover:text-purple-300 transition-all duration-300 text-sm hover:text-lg hover:font-semibold relative group px-2 py-1 hover:scale-110">
               <span className="relative z-10">Home</span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
             </a>
