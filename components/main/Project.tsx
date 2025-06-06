@@ -53,7 +53,7 @@ function Projects() {
 					{projectData.map((project, index) => (
 						<div
 							key={project.id}
-							className="flip-card overflow-visible h-[550px] w-[380px] mx-auto cursor-pointer"
+							className="flip-card overflow-visible h-[450px] w-[380px] mx-auto cursor-pointer"
 						>
 							<div className="card-content w-full h-full [transform-style:preserve-3d] transition-transform duration-600 ease-in-out shadow-[0px_0px_25px_5px_#000000aa] rounded-xl hover:[transform:rotateY(180deg)] group relative z-10">
 								
@@ -67,7 +67,7 @@ function Projects() {
 											alt={project.title}
 											width={400}
 											height={200}
-											className="w-full h-48 object-cover"
+											className="w-full h-full object-cover"
 										/>
 										
 										{/* Badge on top of image */}
