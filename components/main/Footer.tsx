@@ -141,8 +141,8 @@ const Footer = () => {
             Get In Touch With Me
           </h2>
           <p className="text-gray-300 text-xl max-w-3xl mx-auto leading-relaxed">
-            Ready to bring your ideas to life? Let's collaborate and create something amazing together. 
-            I'm always excited to work on new projects and connect with fellow developers.
+            Ready to bring your ideas to life? Let&apos;s collaborate and create something amazing together. 
+            I&apos;m always excited to work on new projects and connect with fellow developers.
           </p>
           <div className="w-32 h-2 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 mx-auto mt-8 rounded-full animate-pulse"></div>
         </div>

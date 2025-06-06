@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
 import { SparklesIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 function HeroContent() {
   const handleViewWork = () => {
@@ -87,7 +88,7 @@ function HeroContent() {
         <div className="relative group">
           {/* Gradient background - only visible on hover */}
           <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-pink-500/10 to-cyan-500/20 rounded-full blur-3xl scale-110 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <img
+          <Image
             src="/mainIconsdark.svg"
             alt="Technology stack and development icons"
             height={650}

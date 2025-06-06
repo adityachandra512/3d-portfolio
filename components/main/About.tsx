@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
 import { SparklesIcon, MapPinIcon, CalendarIcon } from "@heroicons/react/24/solid";
 
@@ -49,9 +50,11 @@ const About = () => {
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-pink-500/10 to-cyan-500/20 rounded-2xl blur-2xl scale-110 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-900/20 to-cyan-900/20 backdrop-blur-sm border border-purple-500/30 p-6">
-              <img
+              <Image
                 src="/picprofile.jpg"
                 alt="Aditya Chandra"
+                width={320}
+                height={384}
                 className="w-80 h-96 object-cover rounded-xl transition-all duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
@@ -70,7 +73,7 @@ const About = () => {
             
           <div className="space-y-4">
             <p className="text-lg text-gray-300 leading-relaxed">
-              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold">Aditya Chandan</span> — 
+              Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold">Aditya Chandan</span> — 
               a passionate developer with a strong foundation in web development, Python programming, and modern frameworks like React, Flask, and Django. 
               I love building user-centric applications that combine clean design with powerful functionality.
             </p>
@@ -83,17 +86,17 @@ const About = () => {
             
             <p className="text-lg text-gray-300 leading-relaxed">
               With hands-on experience from multiple internships — including projects in fuel economy systems and chatbot development — 
-              I've built real-world solutions using technologies like PCAN-Basic, MongoDB, and Supabase. Whether it's designing authentication systems, 
+              I&apos;ve built real-world solutions using technologies like PCAN-Basic, MongoDB, and Supabase. Whether it&apos;s designing authentication systems, 
               optimizing backend logic, or integrating external APIs, I thrive on solving problems through code.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm always eager to explore new technologies — from AI models and speech-to-text systems to supply chain analytics and parallel computing. 
-              When I'm not coding, you'll likely find me experimenting with new tools, reading about Nikola Tesla, or imagining what it'd be like to read minds!
+              I&apos;m always eager to explore new technologies — from AI models and speech-to-text systems to supply chain analytics and parallel computing. 
+              When I&apos;m not coding, you&apos;ll likely find me experimenting with new tools, reading about Nikola Tesla, or imagining what it&apos;d be like to read minds!
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500 font-semibold">Let's connect and create something awesome together.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500 font-semibold">Let&apos;s connect and create something awesome together.</span>
             </p>
           </div>
 

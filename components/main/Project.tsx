@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 const projectData = [
 	{
@@ -61,10 +62,12 @@ function Projects() {
 									
 									{/* Upper Section - Full Image */}
 									<div className="relative w-full h-2/3 overflow-hidden rounded-t-xl">
-										<img 
-											src={project.imageSrc} 
+										<Image
+											src={project.imageSrc}
 											alt={project.title}
-											className="w-full h-full object-cover pointer-events-none select-none"
+											width={400}
+											height={200}
+											className="w-full h-48 object-cover"
 										/>
 										
 										{/* Badge on top of image */}
