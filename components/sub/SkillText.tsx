@@ -1,36 +1,42 @@
-"use client"
-import React from 'react'
+"use client";
+
+import React from "react";
 import { motion } from "framer-motion";
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
+import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const SkillText = () => {
   return (
-    <div className='w-full h-auto flex flex-col items-center justify-center'>
-        <motion.div
+    <div className="w-full h-auto flex flex-col items-center justify-center">
+      <motion.div
         variants={slideInFromTop}
-        className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] flex items-center hover:bg-gradient-to-r from-purple-500 to-cyan-500 transition-all duration-300"
+        className="Welcome-box py-3 px-6 border border-[#7042f88b] opacity-[0.9] flex items-center hover:bg-gradient-to-r from-purple-500 to-cyan-500 transition-all duration-300 rounded-full backdrop-blur-sm bg-black/20 w-fit mb-8"
       >
-        <SparklesIcon 
-          className="text-[#b49bff] mr-[10px] h-5 w-5 p-[2px] rounded-full" 
-        />
-        <h1 className="Welcome-text text-[13px]">
-          think better with nextjs 13
+        <SparklesIcon className="text-[#b49bff] mr-3 h-5 w-5" />
+        <h1 className="Welcome-text text-sm font-medium tracking-wide text-white">
+          Skills & Technologies
         </h1>
       </motion.div>
+
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]">
-            making app with modern technologies
-        </motion.div>
-        <motion.div
-        variants={slideInFromLeft(0.5)}
-        className='cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center'
-        >
-            Never miss a task deadline or idea
-        </motion.div>
-    </div>
-  )
-}
+        className="text-4xl lg:text-5xl text-white font-bold text-center mb-4"
+      >
+        Technical{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          Expertise
+        </span>
+      </motion.div>
 
-export default SkillText
+      <motion.div
+        variants={slideInFromLeft(0.7)}
+        className="text-lg text-gray-300 text-center max-w-2xl mb-16"
+      >
+        A comprehensive overview of my technical skills and the technologies I work
+        with to build modern applications.
+      </motion.div>
+    </div>
+  );
+};
+
+export default SkillText;

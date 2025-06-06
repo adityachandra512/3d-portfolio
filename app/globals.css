@@ -69,3 +69,35 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Fix button interactions */
+button {
+  cursor: pointer !important;
+  user-select: none;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+/* Fix card interactions */
+.flip-card {
+  cursor: pointer;
+}
+
+.flip-card * {
+  pointer-events: auto;
+}
+
+/* Ensure links work properly */
+a {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* Fix z-index stacking */
+.card-back a {
+  position: relative;
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+}
