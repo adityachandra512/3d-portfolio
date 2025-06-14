@@ -73,7 +73,7 @@ const About = () => {
             
           <div className="space-y-4">
             <p className="text-lg text-gray-300 leading-relaxed">
-              Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold">Aditya Chandan</span> — 
+              Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold">Aditya Chandra</span> — 
               a passionate developer with a strong foundation in web development, Python programming, and modern frameworks like React, Flask, and Django. 
               I love building user-centric applications that combine clean design with powerful functionality.
             </p>
